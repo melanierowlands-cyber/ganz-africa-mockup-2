@@ -1,0 +1,123 @@
+/* ============================================================
+   GanzAfrica — Colour Variant 2
+   Dark green #005c3d — backgrounds, headings, footer
+   Bright green #009758 — accent, underlines, buttons
+   Gold #f8b712 — button hover states only
+   ============================================================ */
+
+@import url('./styles.css');
+
+
+/* ── Accent bars + underlines → gold ────────────────────────── */
+
+.gold-underline::after {
+  background: var(--gold);
+}
+
+.hero__accent {
+  background: var(--gold);
+}
+
+
+/* ── Icons → gold stroke, white bg ──────────────────────────── */
+
+.pillar__icon svg,
+.element-card__icon svg {
+  stroke: var(--gold);
+}
+
+
+/* ── Icon headings → bright green ───────────────────────────── */
+
+.pillar__title,
+.element-card__title {
+  color: var(--green-bright);
+}
+
+
+/* ── Stats bar ───────────────────────────────────────────────── */
+
+.stats-bar {
+  border-bottom-color: var(--green-bright);
+}
+
+.stat__number {
+  color: var(--green-bright);
+}
+
+
+/* ── Element cards — top accent border ──────────────────────── */
+
+.element-card {
+  border-top-color: var(--green-bright);
+}
+
+
+/* ── Testimonials — dark green bg, bright green accents ─────── */
+
+.testimonial__quote-mark {
+  color: var(--green-bright);
+}
+
+.testimonial__author {
+  color: var(--green-bright);
+}
+
+
+/* ── Footer ──────────────────────────────────────────────────── */
+
+.footer__heading {
+  color: var(--green-bright);
+}
+
+.footer__social-link:hover {
+  background: var(--green-bright);
+}
+
+.footer__social-link:hover svg {
+  fill: var(--white);
+}
+
+.footer__contact a:hover,
+.footer__links a:hover {
+  color: var(--green-bright);
+}
+
+
+/* ── Buttons — bright green bg + white text ─────────────────── */
+
+.btn--gold {
+  background: var(--green-bright);
+  color: var(--white);
+  border-color: var(--green-bright);
+}
+
+.btn--green {
+  background: var(--green-bright);
+  border-color: var(--green-bright);
+}
+
+/* Fellows Login */
+.header__login {
+  color: var(--green-bright);
+}
+
+
+/* ── All button hovers — gold bg + white text ───────────────── */
+
+.btn--gold:hover,
+.btn--green:hover,
+.btn--outline-white:hover,
+.btn--outline-green:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+  box-shadow: 0 4px 16px rgba(248, 183, 18, 0.4);
+  transform: translateY(-2px);
+}
+
+.header__login:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
